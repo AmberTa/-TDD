@@ -7,12 +7,10 @@ For more information on this file, see
 https://docs.djangoproject.com/en/1.11/howto/deployment/wsgi/
 """
 
-import os,sys
+import os
 
 from django.core.wsgi import get_wsgi_application
 
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "superlists.settings")
 
 application = get_wsgi_application()
-
-sys.path.append('/usr/local/lib/python2.7/site-packages')
