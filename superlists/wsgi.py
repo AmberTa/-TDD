@@ -9,10 +9,12 @@ https://docs.djangoproject.com/en/1.11/howto/deployment/wsgi/
 
 import os,sys
 
-from django.core.wsgi import get_wsgi_application
-
 sys.path.append('/usr/lib/python2.7/site-packages')
 
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "superlists.settings")
+
+from django.core.wsgi import get_wsgi_application
+
+
 
 application = get_wsgi_application()
